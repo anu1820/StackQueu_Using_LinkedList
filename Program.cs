@@ -7,18 +7,18 @@ namespace StackQueueusinglinkedlist
         public static void Main(string[] args)
         {
             Console.WriteLine(" Welocome to Stack & Queue Programs Using Linked list");
-            Stack obj = new Stack();
+
+            Queue obj = new Queue();
             Console.WriteLine("After push the elements are : ");
 
-            obj.push(70);
-            obj.push(30);
-            obj.push(56);
+            obj.enqueue(56);
+            obj.enqueue(30);
+            obj.enqueue(70);
             Console.WriteLine();
-            Console.WriteLine("Item popped from stack = " + obj.pop());
-
-            Console.WriteLine("Top Element of the stack is : " + obj.peek());
+            //Console.WriteLine("Item popped from Queue = " + obj.dequeue());
 
 
+            Console.WriteLine("Top Element of the Queue is : " + obj.peek());
         }
     }
 }
